@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Menú — VITTA Restaurante Gourmet</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo">
+        <span class="logo-icon">✦</span>
+        <span class="logo-text">VITTA</span>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html" class="nav-link">Inicio</a></li>
+        <li><a href="menu.html" class="nav-link active">Menú</a></li>
+        <li><a href="nosotros.html" class="nav-link">Nosotros</a></li>
+        <li><a href="contacto.html" class="nav-link">Contacto</a></li>
+        <li><a href="contacto.html" class="nav-cta">Reservar mesa</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Abrir menú">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <section class="page-hero">
+    <div class="page-hero-bg">
+      <img src="Imagenes/descarga.jpg" alt="Menú Aurum" />
+      <div class="hero-overlay"></div>
+    </div>
+    <div class="page-hero-content">
+      <p class="hero-eyebrow reveal">Temporada 2026</p>
+      <h1 class="page-hero-title reveal">Nuestro Menú</h1>
+      <p class="page-hero-sub reveal">Cada plato, una historia. Cada ingrediente, una elección.</p>
+    </div>
+  </section>
+
+  <section class="menu-section">
+    <div class="menu-filter reveal" id="menuFilter">
+      <button class="filter-btn active" data-category="all">Todo</button>
+      <button class="filter-btn" data-category="Starter">Entradas</button>
+      <button class="filter-btn" data-category="Main">Platos principales</button>
+      <button class="filter-btn" data-category="Dessert">Postres</button>
+      <button class="filter-btn" data-category="Drink">Bebidas</button>
+    </div>
+
+    <div class="menu-loading" id="menuLoading">
+      <div class="loading-spinner"></div>
+      <p>Cargando los platos del día...</p>
+    </div>
+
+    <div class="menu-error hidden" id="menuError">
+      <p class="error-icon">⚠️</p>
+      <h3>No pudimos cargar el menú</h3>
+      <p>Verifica tu conexión e intenta de nuevo.</p>
+      <button class="btn-primary" id="retryBtn">Reintentar</button>
+    </div>
+
+    <div class="menu-grid hidden" id="menuGrid">
+    
+    </div>
+  </section>
+
+  <section class="chef-note reveal">
+    <div class="chef-note-inner">
+      <span class="section-label">Del chef</span>
+      <h2>"Cocinamos con el alma, servimos con el corazón"</h2>
+      <p>Todos nuestros platos pueden adaptarse a requerimientos dietéticos especiales. Consulta a nuestro personal sobre opciones sin gluten, vegetarianas o veganas.</p>
+      <a href="contacto.html" class="btn-outline">Consultar disponibilidad</a>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="nav-logo">
+          <span class="logo-icon">✦</span>
+          <span class="logo-text">VITTA</span>
+        </a>
+        <p>Cocina de autor que celebra los sabores del mundo con alma dominicana.</p>
+        <div class="social-links">
+          <a href="#" aria-label="Instagram" class="social-link">IG</a>
+          <a href="#" aria-label="Facebook" class="social-link">FB</a>
+          <a href="#" aria-label="TikTok" class="social-link">TK</a>
+          <a href="#" aria-label="WhatsApp" class="social-link">WA</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Navegación</h4>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="menu.html">Menú</a></li>
+          <li><a href="nosotros.html">Nosotros</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Horario</h4>
+        <ul>
+          <li>Lun – Vie: 12:00 – 22:00</li>
+          <li>Sábado: 12:00 – 23:00</li>
+          <li>Domingo: 12:00 – 20:00</li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contacto</h4>
+        <ul>
+          <li>📍 Av. Abraham Lincoln 402, Santo Domingo</li>
+          <li>📞 +1 (809) 555-0192</li>
+          <li>✉️ reservas@vitta.do</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 VITTA Restaurante Gourmet. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

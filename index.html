@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>VITTA — Restaurante Gourmet</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo">
+        <span class="logo-icon">✦</span>
+        <span class="logo-text">VITTA</span>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html" class="nav-link active">Inicio</a></li>
+        <li><a href="menu.html" class="nav-link">Menú</a></li>
+        <li><a href="nosotros.html" class="nav-link">Nosotros</a></li>
+        <li><a href="contacto.html" class="nav-link">Contacto</a></li>
+        <li><a href="contacto.html" class="nav-cta">Reservar mesa</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Abrir menú">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <section class="hero" id="hero">
+    <div class="hero-bg">
+      <img src="Imagenes/descarga.jpg" alt="Interior del restaurante Aurum" class="hero-img" />
+      <div class="hero-overlay"></div>
+    </div>
+    <div class="hero-content">
+      <p class="hero-eyebrow reveal">Cocina de autor · Santo Domingo</p>
+      <h1 class="hero-title reveal">
+        El arte de<br /><em>saborear</em><br />la vida
+      </h1>
+      <p class="hero-subtitle reveal">Ingredientes de origen, técnicas contemporáneas<br />y una atmósfera que no olvidarás.</p>
+      <div class="hero-actions reveal">
+        <a href="menu.html" class="btn-primary">Ver menú completo</a>
+        <a href="contacto.html" class="btn-ghost">Reservar mesa</a>
+      </div>
+    </div>
+    <div class="hero-scroll-hint">
+      <span>Desplaza</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <section class="stats-bar">
+    <div class="stat reveal">
+      <strong>12+</strong>
+      <span>años de experiencia</span>
+    </div>
+    <div class="stat-divider"></div>
+    <div class="stat reveal">
+      <strong>3</strong>
+      <span>premios nacionales</span>
+    </div>
+    <div class="stat-divider"></div>
+    <div class="stat reveal">
+      <strong>98%</strong>
+      <span>satisfacción de clientes</span>
+    </div>
+    <div class="stat-divider"></div>
+    <div class="stat reveal">
+      <strong>50+</strong>
+      <span>platos de temporada</span>
+    </div>
+  </section>
+
+  <section class="featured" id="featured">
+    <div class="section-header reveal">
+      <span class="section-label">Lo más pedido</span>
+      <h2 class="section-title">Platos que enamoran</h2>
+      <p class="section-desc">Una selección de nuestras creaciones más queridas por nuestros comensales.</p>
+    </div>
+    <div class="featured-grid">
+
+      <article class="dish-card reveal">
+        <div class="dish-img-wrap">
+          <img src="Imagenes/Mushroom risotto with black truffle.jpg" alt="Risotto de trufa" class="dish-img" />
+          <span class="dish-badge">Chef's pick</span>
+        </div>
+        <div class="dish-info">
+          <span class="dish-category">Plato principal</span>
+          <h3 class="dish-name">Risotto de trufa negra</h3>
+          <p class="dish-desc">Arroz arborio cremoso con láminas de trufa negra, parmesano reggiano y aceite de avellana.</p>
+          <div class="dish-footer">
+            <span class="dish-price">RD$ 1,850</span>
+            <a href="menu.html" class="dish-link">Ver menú →</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="dish-card reveal">
+        <div class="dish-img-wrap">
+          <img src="Imagenes/Salmon.jpg" alt="Salmón sellado" class="dish-img" />
+          <span class="dish-badge">Favorito</span>
+        </div>
+        <div class="dish-info">
+          <span class="dish-category">Plato principal</span>
+          <h3 class="dish-name">Salmón sellado al miso</h3>
+          <p class="dish-desc">Filete de salmón glaseado con miso blanco, puré de coliflor ahumada y espárragos trigueros.</p>
+          <div class="dish-footer">
+            <span class="dish-price">RD$ 2,100</span>
+            <a href="menu.html" class="dish-link">Ver menú →</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="dish-card reveal">
+        <div class="dish-img-wrap">
+          <img src="Imagenes/descarga1.jpg" alt="Coulant de chocolate" class="dish-img" />
+          <span class="dish-badge">Postre estrella</span>
+        </div>
+        <div class="dish-info">
+          <span class="dish-category">Postre</span>
+          <h3 class="dish-name">Coulant de chocolate 70%</h3>
+          <p class="dish-desc">Bizcocho tibio de chocolate oscuro con corazón fundido, helado de vainilla de Madagascar y sal de Maldon.</p>
+          <div class="dish-footer">
+            <span class="dish-price">RD$ 650</span>
+            <a href="menu.html" class="dish-link">Ver menú →</a>
+          </div>
+        </div>
+      </article>
+
+    </div>
+    <div class="featured-cta reveal">
+      <a href="menu.html" class="btn-primary">Explorar menú completo</a>
+    </div>
+  </section>
+
+  <section class="experience">
+    <div class="experience-img-col reveal">
+      <img src="Imagenes/descarga2.jpg" alt="Experiencia en Aurum" />
+      <div class="exp-accent-box">
+        <p class="exp-accent-text">"La gastronomía es el arte de usar la comida para crear felicidad."</p>
+        <span class="exp-accent-author">— Chef Marco Aurelio</span>
+      </div>
+    </div>
+    <div class="experience-text-col reveal">
+      <span class="section-label">Nuestra promesa</span>
+      <h2 class="section-title">Una experiencia más allá del plato</h2>
+      <p>En VITTA cada detalle importa: desde la selección de productores locales hasta la temperatura exacta del vino. Nuestro equipo trabaja con pasión para que cada visita se convierta en un recuerdo imborrable.</p>
+      <ul class="exp-list">
+        <li><span class="exp-icon">✦</span> Ingredientes frescos de temporada y origen local</li>
+        <li><span class="exp-icon">✦</span> Maridaje de vinos curado por sommelier certificado</li>
+        <li><span class="exp-icon">✦</span> Menú degustación disponible con reserva previa</li>
+        <li><span class="exp-icon">✦</span> Espacio privado para eventos y celebraciones</li>
+      </ul>
+      <a href="nosotros.html" class="btn-outline">Conocer nuestra historia</a>
+    </div>
+  </section>
+
+  <section class="testimonials" id="testimonials">
+    <div class="section-header reveal">
+      <span class="section-label">Lo que dicen nuestros clientes</span>
+      <h2 class="section-title">Voces que nos inspiran</h2>
+    </div>
+    <div class="testimonials-grid">
+
+      <blockquote class="testimonial-card reveal">
+        <div class="stars">★★★★★</div>
+        <p>"Celebramos nuestro aniversario en VITTA y fue absolutamente mágico. El risotto de trufa es de otro nivel. Ya tenemos reserva para el próximo mes."</p>
+        <footer>
+          <img src="Imagenes/testimonio1.jpg" alt="Valeria M." />
+          <div>
+            <strong>Valeria Montero</strong>
+            <span>Santo Domingo</span>
+          </div>
+        </footer>
+      </blockquote>
+
+      <blockquote class="testimonial-card reveal">
+        <div class="stars">★★★★★</div>
+        <p>"El servicio es impecable y la atmósfera es perfecta para una cena de negocios. El menú degustación de 7 tiempos superó todas mis expectativas."</p>
+        <footer>
+          <img src="Imagenes/testimonio2.jpg" alt="Carlos R." />
+          <div>
+            <strong>Carlos Rodríguez</strong>
+            <span>Santiago</span>
+          </div>
+        </footer>
+      </blockquote>
+
+      <blockquote class="testimonial-card reveal">
+        <div class="stars">★★★★★</div>
+        <p>"Sin duda el mejor restaurante de la ciudad. El coulant de chocolate es pecado puro. El sommelier nos guió con un maridaje excepcional."</p>
+        <footer>
+          <img src="Imagenes/testimonio3.jpg" alt="Lucía P." />
+          <div>
+            <strong>Lucía Peña</strong>
+            <span>Santo Domingo Este</span>
+          </div>
+        </footer>
+      </blockquote>
+
+    </div>
+  </section>
+
+  <section class="cta-section reveal">
+    <div class="cta-inner">
+      <span class="section-label">Reservaciones</span>
+      <h2>¿Listo para vivir la experiencia VITTA?</h2>
+      <p>Asegura tu mesa y déjate sorprender. También atendemos eventos privados y corporativos.</p>
+      <a href="contacto.html" class="btn-primary btn-large">Reservar ahora</a>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="nav-logo">
+          <span class="logo-icon">✦</span>
+          <span class="logo-text">VITTA</span>
+        </a>
+        <p>Cocina de autor que celebra los sabores del mundo con alma dominicana.</p>
+        <div class="social-links">
+          <a href="#" aria-label="Instagram" class="social-link">IG</a>
+          <a href="#" aria-label="Facebook" class="social-link">FB</a>
+          <a href="#" aria-label="TikTok" class="social-link">TK</a>
+          <a href="#" aria-label="WhatsApp" class="social-link">WA</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Navegación</h4>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="menu.html">Menú</a></li>
+          <li><a href="nosotros.html">Nosotros</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Horario</h4>
+        <ul>
+          <li>Lun – Vie: 12:00 – 22:00</li>
+          <li>Sábado: 12:00 – 23:00</li>
+          <li>Domingo: 12:00 – 20:00</li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contacto</h4>
+        <ul>
+          <li>📍 Av. Abraham Lincoln 402, Santo Domingo</li>
+          <li>📞 +1 (809) 555-0192</li>
+          <li>✉️ reservas@vitta.do</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 VITTA Restaurante Gourmet. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
